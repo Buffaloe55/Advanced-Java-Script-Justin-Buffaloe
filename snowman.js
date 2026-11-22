@@ -58,6 +58,25 @@ function drawSnowman(canvas) {
    context.beginPath();
    context.arc(150, 60, 25, 0, Math.PI * 2);
    context.fill();
+
+   // Coal eyes
+context.fillStyle = "#222";
+context.beginPath();
+context.arc(142, 55, 3, 0, Math.PI * 2);
+context.fill();
+
+context.beginPath();
+context.arc(158, 55, 3, 0, Math.PI * 2);
+context.fill();
+
+// Carrot nose pointing right
+context.fillStyle = "orange";
+context.beginPath();
+context.moveTo(149, 60);
+context.lineTo(166, 64);
+context.lineTo(149, 67);
+context.closePath();
+context.fill();
 }
 
 function drawSingleFlake(canvas, x, y) {
