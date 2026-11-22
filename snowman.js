@@ -20,6 +20,13 @@ function drawGround(canvas) {
    // Ground
    context.fillStyle = "brown";
    context.fillRect(0, canvas.height - 80, canvas.width, canvas.height);
+
+   // Holiday greeting in the center of the ground's right half
+   context.font = "bold 16px Verdana";
+   context.textAlign = "center";
+   context.textBaseline = "middle";
+   context.fillStyle = "#98FB98";
+   context.fillText("Happy Holidays", canvas.width * 0.75, canvas.height - 40);
 }
 
 function drawSnowflakes(canvas) {
