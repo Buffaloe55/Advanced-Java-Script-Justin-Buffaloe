@@ -61,6 +61,15 @@ function drawSnowman(canvas) {
 }
 
 function drawSingleFlake(canvas, x, y) {
-   // TODO: Complete the function
+   let context = canvas.getContext("2d");
 
+   context.beginPath();
+   context.moveTo(x, y);
+   context.lineTo(x + flakeSize / 2, y + flakeSize / 2);
+   context.lineTo(x, y + flakeSize);
+   context.lineTo(x - flakeSize / 2, y + flakeSize / 2);
+   context.closePath();
+
+   context.fillStyle = "#eee";
+   context.fill();
 }
