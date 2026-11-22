@@ -22,7 +22,7 @@ function drawGround(canvas) {
    context.fillRect(0, canvas.height - 80, canvas.width, canvas.height);
 
    // Holiday greeting in the center of the ground's right half
-   context.font = "bold 18px 'Brush Script MT', cursive";
+   context.font = "bold 25px 'Brush Script MT', cursive";
    context.textAlign = "center";
    context.textBaseline = "middle";
    context.fillStyle = "#176B35";
